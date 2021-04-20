@@ -8,6 +8,8 @@ import {
 
 import colors from '../../styles/colors';
 
+import fonts from '../../styles/fonts';
+
 interface ButtonsProps extends TouchableOpacityProps {
     title: string;
 }
@@ -30,16 +32,14 @@ export function Button({ title, ...rest }: ButtonsProps){
 const stlyes = StyleSheet.create({    
     button:{
         backgroundColor: colors.green,
+        height: 56,        
+        borderRadius: 16,
         justifyContent: "center",
         alignItems: "center",
-        borderRadius: 16,
-        marginBottom: 10,
-        height: 56,
-        width: 56,
-        paddingHorizontal: 10
     },
     buttonText:{
         color: colors.white,
-        fontSize: 24
+        fontSize: 16,
+        fontFamily: fonts.heading
     }
 });
